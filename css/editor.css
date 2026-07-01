@@ -1,0 +1,209 @@
+/* ==========================================
+   EDITOR
+========================================== */
+
+.editor{
+
+    flex:1;
+
+    padding:45px;
+
+    overflow-y:auto;
+
+    background:#f8f9fc;
+
+}
+
+/* Writing Sheet */
+
+.editor-sheet{
+
+    width:210mm;
+
+    min-height:297mm;
+
+    background:#ffffff;
+
+    margin:auto;
+
+    border-radius:6px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.10);
+
+    padding:25mm;
+
+    position:relative;
+
+}
+
+/* Placeholder */
+
+.editor-sheet:empty:before{
+
+    content:"Start writing your notes...";
+
+    color:#b5b5b5;
+
+}
+
+/* Content */
+
+.editor-sheet{
+
+    font-size:15px;
+
+    line-height:1.8;
+
+    color:#222;
+
+    outline:none;
+
+}
+
+/* Headings */
+
+.editor-sheet h1{
+
+    font-size:30px;
+
+    color:#1E3A8A;
+
+    margin-bottom:18px;
+
+    margin-top:15px;
+
+}
+
+.editor-sheet h2{
+
+    font-size:24px;
+
+    color:#2563EB;
+
+    margin-top:25px;
+
+    margin-bottom:12px;
+
+}
+
+.editor-sheet h3{
+
+    font-size:19px;
+
+    margin-top:20px;
+
+    margin-bottom:10px;
+
+}
+
+/* Paragraph */
+
+.editor-sheet p{
+
+    margin-bottom:14px;
+
+}
+
+/* Lists */
+
+.editor-sheet ul{
+
+    padding-left:22px;
+
+    margin-bottom:16px;
+
+}
+
+.editor-sheet ol{
+
+    padding-left:22px;
+
+    margin-bottom:16px;
+
+}
+
+/* Table */
+
+.editor-sheet table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    margin:20px 0;
+
+}
+
+.editor-sheet th{
+
+    background:#1E3A8A;
+
+    color:#ffffff;
+
+    padding:12px;
+
+    border:1px solid #d9d9d9;
+
+}
+
+.editor-sheet td{
+
+    padding:10px;
+
+    border:1px solid #d9d9d9;
+
+}
+
+/* Images */
+
+.editor-sheet img{
+
+    max-width:100%;
+
+    display:block;
+
+    margin:18px auto;
+
+    border-radius:8px;
+
+}
+
+/* Selection */
+
+::selection{
+
+    background:#2563EB;
+
+    color:white;
+
+}
+
+/* Scrollbar */
+
+.editor::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+.editor::-webkit-scrollbar-thumb{
+
+    background:#c5c5c5;
+
+    border-radius:10px;
+
+}
+
+.editor::-webkit-scrollbar-thumb:hover{
+
+    background:#999;
+
+}
+
+/* Focus */
+
+.editor-sheet:focus{
+
+    outline:none;
+
+}
