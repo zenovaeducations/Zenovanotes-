@@ -1,0 +1,181 @@
+/* ==========================================
+   TOOLBAR
+========================================== */
+
+.toolbar{
+
+    height:60px;
+
+    background:#ffffff;
+
+    border-bottom:1px solid var(--border);
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    padding:0 18px;
+
+    position:sticky;
+
+    top:0;
+
+    z-index:50;
+
+    box-shadow:0 2px 8px rgba(0,0,0,.05);
+
+    overflow-x:auto;
+
+}
+
+/* Hide scrollbar */
+
+.toolbar::-webkit-scrollbar{
+
+    height:0;
+
+}
+
+.toolbar button{
+
+    min-width:42px;
+
+    height:40px;
+
+    border-radius:8px;
+
+    background:#F5F5F5;
+
+    color:#333;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    transition:.25s;
+
+}
+
+.toolbar button:hover{
+
+    background:#E6EEFF;
+
+    color:var(--primary);
+
+}
+
+.toolbar button:active{
+
+    transform:scale(.95);
+
+}
+
+/* Active Tool */
+
+.toolbar button.active{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+/* Divider */
+
+.toolbar-divider{
+
+    width:1px;
+
+    height:28px;
+
+    background:#DADADA;
+
+    margin:0 6px;
+
+}
+
+/* Dropdown */
+
+.toolbar select{
+
+    height:40px;
+
+    border:1px solid var(--border);
+
+    border-radius:8px;
+
+    padding:0 10px;
+
+    background:white;
+
+    font-size:14px;
+
+    font-family:inherit;
+
+    outline:none;
+
+}
+
+/* Color Picker */
+
+.toolbar input[type="color"]{
+
+    width:38px;
+
+    height:38px;
+
+    border:none;
+
+    background:none;
+
+    cursor:pointer;
+
+}
+
+/* Search */
+
+.toolbar-search{
+
+    margin-left:auto;
+
+}
+
+.toolbar-search input{
+
+    width:220px;
+
+    height:40px;
+
+    border:1px solid var(--border);
+
+    border-radius:10px;
+
+    padding:0 14px;
+
+    outline:none;
+
+    transition:.25s;
+
+}
+
+.toolbar-search input:focus{
+
+    border-color:var(--primary);
+
+    box-shadow:0 0 0 3px rgba(37,99,235,.15);
+
+}
+
+/* Responsive */
+
+@media(max-width:1200px){
+
+    .toolbar-search{
+
+        display:none;
+
+    }
+
+}
