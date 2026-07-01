@@ -1,0 +1,191 @@
+/* ==========================================
+   COMPONENT STYLES
+========================================== */
+
+.page-content > *{
+    margin-bottom:18px;
+}
+
+/* Common Box */
+
+.definition-box,
+.remember-box,
+.example-box,
+.formula-box,
+.important-box,
+.board-box,
+.kcet-box{
+
+    border-left:6px solid;
+
+    border-radius:10px;
+
+    padding:16px 18px;
+
+    box-shadow:0 3px 10px rgba(0,0,0,.06);
+
+    transition:.25s;
+
+}
+
+.definition-box:hover,
+.remember-box:hover,
+.example-box:hover,
+.formula-box:hover,
+.important-box:hover,
+.board-box:hover,
+.kcet-box:hover{
+
+    transform:translateY(-2px);
+
+}
+
+/* Title */
+
+.box-title{
+
+    font-size:17px;
+
+    font-weight:700;
+
+    margin-bottom:10px;
+
+}
+
+/* Definition */
+
+.definition-box{
+
+    background:#EAF4FF;
+
+    border-color:#1976D2;
+
+}
+
+.definition-box .box-title{
+
+    color:#1565C0;
+
+}
+
+/* Remember */
+
+.remember-box{
+
+    background:#FFF8D9;
+
+    border-color:#F9A825;
+
+}
+
+.remember-box .box-title{
+
+    color:#E65100;
+
+}
+
+/* Example */
+
+.example-box{
+
+    background:#FFF2E8;
+
+    border-color:#EF6C00;
+
+}
+
+.example-box .box-title{
+
+    color:#E65100;
+
+}
+
+/* Formula */
+
+.formula-box{
+
+    background:#F2EBFF;
+
+    border-color:#673AB7;
+
+}
+
+.formula-box .box-title{
+
+    color:#512DA8;
+
+}
+
+.formula-box p{
+
+    font-size:20px;
+
+    font-weight:600;
+
+    text-align:center;
+
+}
+
+/* Important */
+
+.important-box{
+
+    background:#FFECEC;
+
+    border-color:#D32F2F;
+
+}
+
+.important-box .box-title{
+
+    color:#B71C1C;
+
+}
+
+/* Board */
+
+.board-box{
+
+    background:#E8F5E9;
+
+    border-color:#2E7D32;
+
+}
+
+.board-box .box-title{
+
+    color:#1B5E20;
+
+}
+
+/* KCET */
+
+.kcet-box{
+
+    background:#E3F2FD;
+
+    border-color:#0288D1;
+
+}
+
+.kcet-box .box-title{
+
+    color:#01579B;
+
+}
+
+/* Editable Text */
+
+.page-content p{
+
+    outline:none;
+
+}
+
+.page-content h1,
+.page-content h2,
+.page-content h3{
+
+    outline:none;
+
+  }
