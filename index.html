@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Zenova Notes Studio</title>
+
+    <!-- Fonts -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Icons -->
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+    <link rel="stylesheet"
+          href="css/layout.css">
+
+    <link rel="stylesheet"
+          href="css/toolbar.css">
+
+    <link rel="stylesheet"
+          href="css/editor.css">
+
+    <link rel="stylesheet"
+          href="css/preview.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="topbar">
+
+        <div class="logo">
+
+            <i class="fa-solid fa-book-open"></i>
+
+            <span>Zenova Notes Studio</span>
+
+        </div>
+
+        <div class="top-actions">
+
+            <button id="saveBtn">
+
+                <i class="fa-solid fa-floppy-disk"></i>
+
+                Save
+
+            </button>
+
+            <button id="exportBtn">
+
+                <i class="fa-solid fa-file-pdf"></i>
+
+                Export
+
+            </button>
+
+        </div>
+
+    </header>
+
+    <!-- MAIN -->
+
+    <main class="workspace">
+
+        <!-- LEFT SIDEBAR -->
+
+        <aside class="sidebar">
+
+            <h3>Components</h3>
+
+            <button class="component">
+
+                Heading
+
+            </button>
+
+            <button class="component">
+
+                Sub Heading
+
+            </button>
+
+            <button class="component">
+
+                Paragraph
+
+            </button>
+
+            <button class="component">
+
+                Definition Box
+
+            </button>
+
+            <button class="component">
+
+                Remember Box
+
+            </button>
+
+            <button class="component">
+
+                Example Box
+
+            </button>
+
+            <button class="component">
+
+                Formula Box
+
+            </button>
+
+            <button class="component">
+
+                Table
+
+            </button>
+
+            <button class="component">
+
+                Image
+
+            </button>
+
+            <button class="component">
+
+                Flowchart
+
+            </button>
+
+        </aside>
+
+        <!-- CENTER -->
+
+        <section class="editor-area">
+
+            <!-- TOOLBAR -->
+
+            <div class="toolbar">
+
+                <button>B</button>
+
+                <button>I</button>
+
+                <button>U</button>
+
+                <button>H1</button>
+
+                <button>H2</button>
+
+                <button>H3</button>
+
+                <button>Table</button>
+
+                <button>Formula</button>
+
+                <button>Image</button>
+
+            </div>
+
+            <!-- EDITOR -->
+
+            <div id="editor"
+
+                 class="editor"
+
+                 contenteditable="true">
+
+                <h1>Start Writing...</h1>
+
+                <p>
+
+                    Type your notes here.
+
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- RIGHT -->
+
+        <aside class="preview-panel">
+
+            <h3>Live A4 Preview</h3>
+
+            <div class="page">
+
+                <div class="page-content">
+
+                    Page 1
+
+                </div>
+
+            </div>
+
+        </aside>
+
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer class="statusbar">
+
+        Ready
+
+    </footer>
+
+    <!-- JS -->
+
+    <script src="js/app.js"></script>
+
+    <script src="js/editor.js"></script>
+
+    <script src="js/layout.js"></script>
+
+    <script src="js/pages.js"></script>
+
+</body>
+
+</html>
